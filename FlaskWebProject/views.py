@@ -3,7 +3,6 @@ Routes and views for the flask application.
 """
 
 from datetime import datetime
-import json
 from flask import render_template
 from FlaskWebProject import app
 
@@ -33,7 +32,7 @@ def latest():
         message= message1
     )
 
-message1="R"
+message1="11:40 AM, Sun, May 10th. 12 Citibikes Available. Temp 46 F. No Rain. A Train Manhatten 5mins, 25mins. C Train Manhatten 10mins, 30mins. BTC $243.34.*"
 
 @app.route('/contact')
 def contact():
