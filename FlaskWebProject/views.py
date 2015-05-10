@@ -32,6 +32,7 @@ def latest():
         message= message1
     )
 
+message1="R"
 
 @app.route('/contact')
 def contact():
