@@ -6,6 +6,8 @@ from datetime import datetime
 from flask import render_template
 from FlaskWebProject import app
 
+
+
 @app.route('/')
 @app.route('/home')
 def home():
@@ -17,6 +19,8 @@ def home():
     )
 
 
+message1="11:40 AM, Sun, May 10th. 12 Citibikes Available. Temp 46 F. No Rain. A Train Manhatten 5mins, 25mins. C Train Manhatten 10mins, 30mins. BTC $243.34."
+
 @app.route('/contact')
 def contact():
     """Renders the contact page."""
@@ -24,7 +28,7 @@ def contact():
         'contact.html',
         title='Contact',
         year=datetime.now().year,
-        message="11:40 AM, Sun, May 10th. 12 Citibikes Available. Temp 46 F. No Rain. A Train Manhatten 5mins, 25mins. C Train Manhatten 10mins, 30mins. BTC $243.34."
+        message= message1
     )
 
 @app.route('/about')
