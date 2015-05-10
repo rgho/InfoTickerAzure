@@ -16,6 +16,8 @@ def home():
         year=datetime.now().year,
     )
 
+
+text = "11:40 AM, Sun, May 10th. 12 Citibikes Available. Temp 46 F. No Rain. A Train Manhatten 5mins, 25mins. C Train Manhatten 10mins, 30mins. BTC $243.34.     "
 @app.route('/contact')
 def contact():
     """Renders the contact page."""
@@ -23,7 +25,7 @@ def contact():
         'contact.html',
         title='Contact',
         year=datetime.now().year,
-        message='Your contact page.'
+        message=text
     )
 
 @app.route('/about')
