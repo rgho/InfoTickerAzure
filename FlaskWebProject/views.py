@@ -22,6 +22,17 @@ def home():
 x = datetime.now().year
 message1="11:40 AM, Sun, May 10th. 12 Citibikes Available. Temp 46 F. No Rain. A Train Manhatten 5mins, 25mins. C Train Manhatten 10mins, 30mins. BTC $243.34." + str(x)
 
+@app.route('/latest')
+def latest():
+    """Renders the latest page."""
+    return render_template(
+        'latest.html',
+        title='Latest',
+        year=datetime.now().year,
+        message= message1
+    )
+
+
 @app.route('/contact')
 def contact():
     """Renders the contact page."""
